@@ -15,10 +15,10 @@ echo -e "
 
 
 echo -e "
-$date = date -d now + %Y%m%d
+dime = $(date -d + %Y%m%d)
 ▶ \033[33;1mgit commit -m 'date'
 \033[0m"
-git commit -m "date"
+git commit -m "auto push at $date"
 
 echo -e "
 ▶ \033[33;1mgit push
