@@ -25,7 +25,6 @@ echo -e "
 "
 echo -e "\033[37;1mstart pushing ...\033[0m
 "
-git pull
 
 git push
 echo -e "
