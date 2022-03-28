@@ -79,4 +79,4 @@ if __name__ == "__main__":
     print(s)
     info = str(s)
     with open("loging.log", "a") as logings:
-        print(str(datetime.datetime.now()) + "-" + "输出结果为:{}".format(info), file=logings)
+        print(str(datetime.datetime.now()) + "-" + "messages is :{}".format(info), file=logings)
