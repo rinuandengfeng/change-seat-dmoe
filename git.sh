@@ -15,7 +15,7 @@ echo -e "
 
 
 echo -e "
-time = (date -d + %Y%m%d)
+time=$(date "+%Y-%m-%d %H:%M:%S")
 echo $time
 ▶ \033[33;1mgit commit -m '$time'
 \033[0m"
