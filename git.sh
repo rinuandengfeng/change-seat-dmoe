@@ -12,12 +12,13 @@ git status
 echo -e "
 ▶ \033[33;1mcommit message:
 \033[37;1m"
-read msg
+
 
 echo -e "
-▶ \033[33;1mgit commit -m '$msg'
+$date = date -d now + %Y%m%d
+▶ \033[33;1mgit commit -m 'date'
 \033[0m"
-git commit -m "$msg"
+git commit -m "date"
 
 echo -e "
 ▶ \033[33;1mgit push
