@@ -8,12 +8,13 @@ from apscheduler.schedulers.background import BackgroundScheduler
 def tick():
     print("tick ! the time is : %s" % datetime.now())
     os.system("python library-script.py")
+    os.system("git.sh")
 
 
 if __name__ == "__main__":
     scheduler = BackgroundScheduler()
 
-    scheduler.add_job(tick, 'interval', seconds=900)
+    scheduler.add_job(tick, 'interval', seconds=30)
 
     scheduler.start()
 

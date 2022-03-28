@@ -8,6 +8,7 @@ RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list \
 && rm -rf /var/lib/apt/lists/*
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN apt-get -y install git
 
 ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
