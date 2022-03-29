@@ -37,7 +37,7 @@ def qiangzuowei(user_token):
     Form_data = {
         "seat": "45001",
         "date": str(today),
-        "startTime": "1020",
+        "startTime": "1080",
         "endTime": "1260",
         "authid": authid,
     }
@@ -70,7 +70,7 @@ def qiangzuowei2(user_token):
     Form_data = {
         "seat": "45001",
         "date": str(tomorrow),
-        "startTime": "1020",
+        "startTime": "1080",
         "endTime": "1260",
         "authid": authid,
     }
@@ -79,6 +79,7 @@ def qiangzuowei2(user_token):
     headers = {
         "Referer": "https://servicewechat.com/wx8adafd853fc21fd6/24/page-frame.html",
         "content-type": "application/x-www-form-urlencoded",
+        "User-Agent": "mozilla/5.0 (iphone; cpu iphone os 5_1_1 like mac os x) applewebkit/534.46 (khtml, like gecko) mobile/9b206 micromessenger/5.0",
         "token": user_token
 
     }
