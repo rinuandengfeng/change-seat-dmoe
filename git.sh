@@ -18,15 +18,17 @@ echo -e "
 time= $(date "+%Y-%m-%d %H:%M:%S")
 ▶ \033[33;1mgit commit -m  "auto push at $time"
 \033[0m"
-git commit -m "auto push at {$time}"
+git commit -m "auto push at $time"
 
 echo -e "
 ▶ \033[33;1mgit push
 "
 echo -e "\033[37;1main pushing ...\033[0m
 "
+git pull test main
 
-git push
+git push test
 echo -e "
 \033[37;1mAll Done\033[0m"
 
+read aa
