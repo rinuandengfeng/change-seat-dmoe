@@ -25,10 +25,8 @@ echo -e "
 "
 echo -e "\033[37;1main pushing ...\033[0m
 "
-git pull test main
 
 git push test main
 echo -e "
 \033[37;1mAll Done\033[0m"
 
-read aa
