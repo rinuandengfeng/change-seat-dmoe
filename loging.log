@@ -8,3 +8,4 @@
 2022-03-29 11:39:35.395277-messages is :{'code': 'fail', 'mes': None}
 2022-03-29 11:47:59.102148-messages is :{'code': 'fail', 'data': None, 'mess': '已有1个有效预约，请在使用结束后再次进行选择', 'code2': 'fail', 'data2': None, 'mess2': '系统可预约时间为 19:00 ~ 23:59'}
 2022-03-29 11:49:26.043104-messages is :{'user_token': '6WT1OX4T8N03294925', 'data': None, 'mess': '已有1个有效预约，请在使用结束后再次进行选择', 'data2': None, 'mess2': '系统可预约时间为 19:00 ~ 23:59'}
+2022-03-29 12:21:33.829590-messages is :{'user_token': 'LAB5LYI79A03292133', 'data': None, 'mess': '已有1个有效预约，请在使用结束后再次进行选择', 'data2': None, 'mess2': '系统可预约时间为 19:00 ~ 23:59'}
