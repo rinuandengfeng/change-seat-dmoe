@@ -9,9 +9,9 @@ RUN sed -i s@/archive.ubuntu.com/@/mirrors.aliyun.com/@g /etc/apt/sources.list \
 
 RUN ln -s /usr/bin/python3 /usr/bin/python
 
-RUN git config --global user.name "xiaoliu"
+RUN git config --global user.name ""
 
-RUN git config --global user.email "1061747240@qq.com"
+RUN git config --global user.email ""
 
 
 
@@ -19,13 +19,13 @@ ENV LC_ALL=C.UTF-8
 ENV LANG=C.UTF-8
 
 WORKDIR /test
-COPY ./library-script /test
+COPY ./library-script/app /test
 
 #4. 升级pip版本
 RUN pip3 install --upgrade pip -i https://pypi.tuna.tsinghua.edu.cn/simple
 #5.运行pip命令安装依赖
-RUN pip3 install --no-cache-dir --upgrade -r /test/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip3 install --no-cache-dir --upgrade -r /test/app/requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 
-CMD python3 main.py
+CMD python3 app/main.py
 
